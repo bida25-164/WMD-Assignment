@@ -16,7 +16,7 @@
 
 <!--My CSS-->
 
-<link rel="stylesheet" href="HTML main pages/main-style.css">
+<link rel="stylesheet" href="main-style.css">
 
 </head>
 
@@ -87,10 +87,147 @@
 
     </header>
     
-<main>
-
-    <p>You don't trust us? <br> How about you hear about us from other people <br> Don't be shy!!! Leave a review since you have arrived</p>
-
+<main class="container my-5">
+    <h1 class="text-center mb-4">Feedback</h1>
+    <p class="text-center mb-4">We value your opinion! Please take a moment to share your thoughts about Atelier Palette. Your feedback helps us improve our website and services.</p>
+    
+    <form>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Name (Optional)</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email (Optional)</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Overall Satisfaction</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction1" value="1">
+                    <label class="form-check-label" for="satisfaction1">1 - Very Dissatisfied</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction2" value="2">
+                    <label class="form-check-label" for="satisfaction2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction3" value="3">
+                    <label class="form-check-label" for="satisfaction3">3 - Neutral</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction4" value="4">
+                    <label class="form-check-label" for="satisfaction4">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="satisfaction5" value="5">
+                    <label class="form-check-label" for="satisfaction5">5 - Very Satisfied</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="howFound" class="form-label">How did you find our website?</label>
+            <select class="form-select" id="howFound">
+                <option selected>Choose...</option>
+                <option value="search">Search Engine</option>
+                <option value="social">Social Media</option>
+                <option value="friend">Friend/Word of Mouth</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">What did you like most about our website? (Select all that apply)</label>
+            <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="like1" value="design">
+                    <label class="form-check-label" for="like1">Design and Layout</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="like2" value="content">
+                    <label class="form-check-label" for="like2">Content Quality</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="like3" value="navigation">
+                    <label class="form-check-label" for="like3">Ease of Navigation</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="like4" value="products">
+                    <label class="form-check-label" for="like4">Product Selection</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="like5" value="speed">
+                    <label class="form-check-label" for="like5">Loading Speed</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="like6" value="other">
+                    <label class="form-check-label" for="like6">Other</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">What areas can we improve? (Select all that apply)</label>
+            <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="improve1" value="design">
+                    <label class="form-check-label" for="improve1">Design and Layout</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="improve2" value="content">
+                    <label class="form-check-label" for="improve2">Content Quality</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="improve3" value="navigation">
+                    <label class="form-check-label" for="improve3">Ease of Navigation</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="improve4" value="products">
+                    <label class="form-check-label" for="improve4">Product Selection</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="improve5" value="speed">
+                    <label class="form-check-label" for="improve5">Loading Speed</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="improve6" value="other">
+                    <label class="form-check-label" for="improve6">Other</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="recommend" class="form-label">Would you recommend Atelier Palette to others?</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="recommend" id="recommendYes" value="yes">
+                    <label class="form-check-label" for="recommendYes">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="recommend" id="recommendNo" value="no">
+                    <label class="form-check-label" for="recommendNo">No</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="recommend" id="recommendMaybe" value="maybe">
+                    <label class="form-check-label" for="recommendMaybe">Maybe</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="comments" class="form-label">Additional Comments</label>
+            <textarea class="form-control" id="comments" rows="4" placeholder="Please share any additional thoughts or suggestions..."></textarea>
+        </div>
+        
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </div>
+    </form>
 </main>
 
 
