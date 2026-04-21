@@ -114,3 +114,11 @@ header {
     text-align:right;
 
 }
+
+.exhibition-2 .past-exhibitions img {
+
+    width: 45%;
+    height: 25%;
+    float:center;
+    margin-top:300px;
+}
