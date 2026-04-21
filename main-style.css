@@ -90,23 +90,27 @@ header {
     text-align: center;
 
 }
+.exhibition-img{
 
-.exhibition-img .heading{
-
-    text-align: justify;
+    margin-top: 16px;
 }
+
+
 
 .exhibition-img img {
     width: 50%;
     height: 25%;
-    border-radius: 0.25rem;
     float: left;
-    padding: 20px;
-    border-radius:70px;
-
+    padding: 10px;
+    border-radius: 30px;
+    border-bottom-style: outset;
+    border-left-style: inset;
+    border-color:#eee6c4;
+    margin-left: 14px;
 
 }
 
-.exhibition-img p{ 
-    display:flex;
+.exhibition-img p h2{ 
+    text-align:right;
+
 }
