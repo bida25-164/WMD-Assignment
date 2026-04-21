@@ -101,7 +101,12 @@ header {
     height: 25%;
     border-radius: 0.25rem;
     float: left;
-    padding: 50px;
+    padding: 20px;
+    border-radius:70px;
 
 
+}
+
+.exhibition-img p{ 
+    display:flex;
 }
