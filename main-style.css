@@ -1,6 +1,6 @@
 header { 
 
-    background-color: rgb(124, 126, 21);
+    
 
     color: white; 
 
@@ -15,15 +15,20 @@ header {
     z-index: 1020;
 }
 
+.navbar .logo {
+    height: 2rem;
+    margin-left: 10px;
+}
+
 /* Mobile-friendly styles */
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Ensures minimum font size for legibility */
+        font-size: 16px;
         line-height: 1.5;
     }
     
     h1 {
-        font-size: 2rem; /* Larger heading for mobile */
+        font-size: 2rem; 
         margin-bottom: 1rem;
     }
     
@@ -33,8 +38,8 @@ header {
     }
     
     .form-control, .form-select, .btn {
-        font-size: 16px; /* Prevents zoom on iOS */
-        min-height: 44px; /* Touch-friendly size */
+        font-size: 16px;
+        min-height: 44px;
     }
     
     .form-check-label {
@@ -43,10 +48,58 @@ header {
     }
     
     .mb-3 {
-        margin-bottom: 1.5rem !important; /* More spacing on mobile */
+        margin-bottom: 1.5rem !important; 
     }
     
     .text-center p {
         font-size: 1.1rem;
     }
+
+    .offcanvas .nav-link {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .offcanvas .nav-link:hover,
+    .offcanvas .nav-link:focus,
+    .offcanvas .nav-link.active {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 0.25rem;
+    }
+
+    .offcanvas-body {
+        padding-top: 1rem;
+    }
+}
+
+.exhibition-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.exhibition-section .exhibition-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: center;
+}
+
+.exhibition-section .exhibition-description {
+    font-size: 1.25rem;
+    color: #6c757d;
+    text-align: center;
+
+}
+
+.exhibition-img .heading {
+    text-align:right;
+    color:#343a40;
+    font-size: 17%;
+}
+
+.exhibition-img img {
+    width: 50%;
+    height: 50%;
+    border-radius: 0.25rem;
+
 }
