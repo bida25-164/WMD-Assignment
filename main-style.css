@@ -90,16 +90,38 @@ header {
     text-align: center;
 
 }
+.exhibition-img{
 
 .exhibition-img .heading {
     text-align:right;
     color:#343a40;
-    font-size: 1.25rem;
+    font-size: 17%;
 }
+
+
 
 .exhibition-img img {
     width: 50%;
-    height: 50%;
-    border-radius: 0.25rem;
+    height: 25%;
+    float: left;
+    padding: 10px;
+    border-radius: 30px;
+    border-bottom-style: outset;
+    border-left-style: inset;
+    border-color:#eee6c4;
+    margin-left: 14px;
 
+}
+
+.exhibition-img p h2{ 
+    text-align:right;
+
+}
+
+.exhibition-2 .past-exhibitions img {
+
+    width: 45%;
+    height: 25%;
+    float:center;
+    margin-top:300px;
 }
