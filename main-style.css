@@ -1,11 +1,6 @@
 header { 
-
-    
-
     color: white; 
-
     padding: 20px; 
-
     text-align: center; 
 }
 
@@ -74,7 +69,7 @@ header {
 
 .exhibition-section {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #e1e1e1;
 }
 
 .exhibition-section .exhibition-title {
@@ -90,12 +85,13 @@ header {
     text-align: center;
 
 }
-.exhibition-img{
+
 
 .exhibition-img .heading {
-    text-align:right;
+    
     color:#343a40;
-    font-size: 17%;
+    
+    
 }
 
 
@@ -118,10 +114,32 @@ header {
 
 }
 
+
 .exhibition-2 .past-exhibitions img {
 
     width: 45%;
     height: 25%;
-    float:center;
-    margin-top:300px;
+    margin: 10% 209px 0 0;
+    padding: 10px;
+    border-radius: 30px;    
+    border-bottom-style: outset;
+    border-left-style: inset;
+    border-color:#eee6c4;
+    margin-left: 14px;
+
+}
+
+
+
+.prev-2 img {
+    width: 50px;
+    height: 70px;
+    
+    float: left;
+    margin-top: 50px;
+    ;
+}
+.prev-2 h3 p {
+
+    text-align: right;
 }
