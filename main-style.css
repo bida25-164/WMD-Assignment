@@ -5,9 +5,16 @@ header {
 }
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1020;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navbar .logo {
@@ -87,57 +94,75 @@ header {
 }
 
 
-.exhibition-img .heading {
-    
-    color:#343a40;
-    
-    
+.exhibition-img {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
 }
-
-
 
 .exhibition-img img {
     width: 50%;
-    height: 25%;
-    float: left;
-    padding: 10px;
+    height: auto;
     border-radius: 30px;
     border-bottom-style: outset;
     border-left-style: inset;
-    border-color:#eee6c4;
-    margin-left: 14px;
-
+    border-color: #eee6c4;
 }
 
-.exhibition-img p h2{ 
-    text-align:right;
-
+.exhibition-img .content {
+    flex: 1;
 }
 
+.exhibition-img .heading {
+    color: #343a40;
+    margin-bottom: 15px;
+}
 
-.exhibition-2 .past-exhibitions img {
+.exhibition-img {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+}
 
-    width: 45%;
-    height: 25%;
-    margin: 10% 209px 0 0;
-    padding: 10px;
-    border-radius: 30px;    
+.exhibition-img img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
     border-bottom-style: outset;
     border-left-style: inset;
-    border-color:#eee6c4;
-    margin-left: 14px;
-
+    border-color: #eee6c4;
 }
 
+.exhibition-img .content {
+    flex: 1;
+}
 
+.exhibition-2 .past-exhibitions,
+.prev-2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+}
 
+.exhibition-2 .past-exhibitions img,
 .prev-2 img {
-    width: 50px;
-    height: 70px;
-    
-    float: left;
-    margin-top: 50px;
-    ;
+    width: 45%;
+    height: auto;
+    border-radius: 30px;
+    border-bottom-style: outset;
+    border-left-style: inset;
+    border-color: #eee6c4;
+}
+
+.exhibition-2 .past-exhibitions .content,
+.prev-2 .content {
+    flex: 1;
 }
 .prev-2 h3 p {
 
@@ -147,10 +172,13 @@ header {
 div.flex-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 div.flex-container > div {
   margin: 10px;
+  flex: 1;
 }
 
 /* Use media query and show the flex items vertically if screen width is less than 600px */
@@ -158,4 +186,69 @@ div.flex-container > div {
   div.flex-container {
     flex-direction: column;
   }
+}
+
+/* Add some padding and border to the flex items */
+div.flex-container > div {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+/* Style the images inside the flex items */
+div.flex-container > div img {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  border-bottom-style: outset;
+    border-left-style: inset;
+}
+
+.container #mission {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.container #mission img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    border-bottom-style: outset;
+    border-left-style: inset;
+    border-color: #eee6c4;
+    margin-top: 0;
+    float: none;
+}
+
+.container #mission .mission-content {
+    flex: 1;
+}
+
+.container #mission .mi-go {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.about-exhibition {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.about-exhibition img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    border-bottom-style: outset;
+    border-left-style: inset;
+}
+
+.about-exhibition .content {
+    flex: 1;
 }
