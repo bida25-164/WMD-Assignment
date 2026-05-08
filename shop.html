@@ -94,10 +94,57 @@
 
     </nav> 
 
-    <h2>Shop</h2>
+    </header>
+
+    <!-- Enquire More Modal -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enquireModalLabel">Enquire More</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquireForm">
+                        <div class="mb-3">
+                            <label for="artistName" class="form-label">Artist Name</label>
+                            <input type="text" class="form-control" id="artistName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="artworkName" class="form-label">Artwork Name</label>
+                            <input type="text" class="form-control" id="artworkName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="visitorName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="visitorEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorType" class="form-label">I am a</label>
+                            <select class="form-select" id="visitorType" required>
+                                <option value="">Select an option</option>
+                                <option value="Private collector">Private collector</option>
+                                <option value="Institution">Institution</option>
+                                <option value="Individual buyer">Individual buyer</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="visitorMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Sub content-->
 
+    <h2>Shop</h2>
     
     <h3>Upgrade your collection with our finest pieces</h3>
     <div class="container mt-3">
@@ -114,6 +161,10 @@
     </li>
   </ul>
 </div>
+
+    <div class="content-header-button">
+        <button class="btn-enquire-more" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire More</button>
+    </div>
 
     </header>
 

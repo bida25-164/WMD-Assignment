@@ -96,11 +96,59 @@
     </nav> 
 
     </header>
-    
+
+    <!-- Enquire modal button -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enquireModalLabel">Enquire More</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enquireForm">
+                        <div class="mb-3">
+                            <label for="artistName" class="form-label">Artist Name</label>
+                            <input type="text" class="form-control" id="artistName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="artworkName" class="form-label">Artwork Name</label>
+                            <input type="text" class="form-control" id="artworkName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="visitorName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="visitorEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorType" class="form-label">I am a</label>
+                            <select class="form-select" id="visitorType" required>
+                                <option value="">---</option>
+                                <option value="Private collector">Private collector</option>
+                                <option value="Institution">Institution</option>
+                                <option value="Individual buyer">Individual buyer</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="visitorMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="visitorMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--My Content-->
     
-    <h1>Acrylic Paintings</h1>
+    <div class="content-header">
+        <h1>Acrylic Paintings</h1>
+        <button class="btn-enquire-more" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire More</button>
+    </div>
 
 <div class="container mt-3">
   
