@@ -252,3 +252,10 @@ div.flex-container > div img {
 .about-exhibition .content {
     flex: 1;
 }
+
+footer {
+
+    color:#ccc;
+    background-color: #343a40 ;
+    
+}
