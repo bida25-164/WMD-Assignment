@@ -269,14 +269,14 @@ div.flex-container > div {
   flex: 1;
 }
 
-/* Use media query and show the flex items vertically if screen width is less than 600px */
+
 @media screen and (max-width:600px) {
   div.flex-container {
     flex-direction: column;
   }
 }
 
-/* Add some padding and border to the flex items */
+/* Styling the flex items */
 div.flex-container > div {
   padding: 20px;
   border: 1px solid #ccc;
@@ -298,6 +298,43 @@ div.flex-container > div img {
     align-items: flex-start;
     gap: 30px;
     padding: 20px;
+}
+
+/* Exhibition-3 styles */
+.exhibition-3 .row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.exhibition-3 .column {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.exhibition-3 .column img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #eee6c4;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exhibition-3 .column img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.exhibition-3 .column h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+
 }
 
 .container #mission img {
