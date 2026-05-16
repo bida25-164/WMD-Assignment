@@ -259,12 +259,16 @@ div.flex-container > div {
 }
 
 /* Style the images inside the flex items */
+div.flex-container > div {
+  min-width: 0;
+}
 div.flex-container > div img {
-  width: 450px;
-  height: 300px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
   border-radius: 10px;
   border-bottom-style: outset;
-    border-left-style: inset;
+  border-left-style: inset;
 }
 
 .container #mission {
