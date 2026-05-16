@@ -183,15 +183,11 @@ header {
 
 
 .exhibition-img {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 20px 0;
 }
 
 .exhibition-img img {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 30px;
     border-bottom-style: outset;
@@ -209,38 +205,17 @@ header {
 }
 
 .exhibition-img {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.exhibition-img img {
-    width: 50%;
-    height: auto;
-    border-radius: 30px;
-    border-bottom-style: outset;
-    border-left-style: inset;
-    border-color: #eee6c4;
-}
-
-.exhibition-img .content {
-    flex: 1;
+    padding: 20px 0;
 }
 
 .exhibition-2 .past-exhibitions,
 .prev-2 {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 20px 0;
 }
 
 .exhibition-2 .past-exhibitions img,
 .prev-2 img {
-    width: 45%;
+    width: 100%;
     height: auto;
     border-radius: 30px;
     border-bottom-style: outset;
