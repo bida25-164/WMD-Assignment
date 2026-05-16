@@ -242,6 +242,9 @@ div.flex-container {
 div.flex-container > div {
   margin: 10px;
   flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 
@@ -259,16 +262,28 @@ div.flex-container > div {
 }
 
 /* Style the images inside the flex items */
-div.flex-container > div {
-  min-width: 0;
-}
 div.flex-container > div img {
+  display: block;
   width: 100%;
   height: auto;
   max-width: 100%;
   border-radius: 10px;
   border-bottom-style: outset;
   border-left-style: inset;
+  object-fit: cover;
+}
+
+.exhibition-img img,
+.exhibition-2 .past-exhibitions img,
+.container #mission img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  border-bottom-style: outset;
+  border-left-style: inset;
+  object-fit: cover;
 }
 
 .container #mission {
