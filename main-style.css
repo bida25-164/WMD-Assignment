@@ -265,12 +265,12 @@ div.flex-container > div {
 div.flex-container > div img {
   display: block;
   width: 100%;
-  height: auto;
   max-width: 100%;
+  height: 230px;
+  object-fit: cover;
   border-radius: 10px;
   border-bottom-style: outset;
   border-left-style: inset;
-  object-fit: cover;
 }
 
 .exhibition-img img,
@@ -287,11 +287,7 @@ div.flex-container > div img {
 }
 
 .container #mission {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 /* Exhibition-3 styles */
@@ -332,7 +328,9 @@ div.flex-container > div img {
 }
 
 .container #mission img {
-    width: 50%;
+    display: block;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 30px;
     border-bottom-style: outset;
@@ -353,15 +351,13 @@ div.flex-container > div img {
 }
 
 .about-exhibition {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .about-exhibition img {
-    width: 50%;
+    display: block;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 30px;
     border-bottom-style: outset;
