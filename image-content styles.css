@@ -1,4 +1,6 @@
-.sculpture-content .row {
+.sculpture-content .row,
+.acrylic-content .row,
+.oil-content .row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
@@ -6,24 +8,32 @@
 }
 
 @media (max-width: 900px) {
-  .sculpture-content .row {
+  .sculpture-content .row,
+  .acrylic-content .row,
+  .oil-content .row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 600px) {
-  .sculpture-content .row {
+  .sculpture-content .row,
+  .acrylic-content .row,
+  .oil-content .row {
     grid-template-columns: 1fr;
   }
 }
 
-.sculpture-content .column {
+.sculpture-content .column,
+.acrylic-content .column,
+.oil-content .column {
   display: grid;
   gap: 0.75rem;
 }
-
-.sculpture-content .column img {
+.sculpture-content .column img,
+.acrylic-content .column img,
+.oil-content .column img {
   width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
   display: block;
   border-radius: 0.5rem;
@@ -31,14 +41,18 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-.sculpture-content .column p {
+.sculpture-content .column p,
+.acrylic-content .column p,
+.oil-content .column p {
   margin: 0;
   font-size: 0.95rem;
   color: #222;
   text-align: center;
 }
 
-.sculpture-content .column cite {
+.sculpture-content .column cite,
+.acrylic-content .column cite,
+.oil-content .column cite {
   font-style: normal;
   font-weight: 600;
   display: block;

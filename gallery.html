@@ -16,8 +16,7 @@
 
 <!--My CSS-->
 
-<link rel="stylesheet" href="HTML main pages/main-style.css">
-
+<link rel="stylesheet" href="main-style.css">
 
 </head>
 
@@ -103,17 +102,65 @@
 
     </header>
 
-    <main>
-        <h3>Our mission</h3>
+    <main class="gallery-section">
+        <div class="container-fluid px-0">
+            <div class="row align-items-start gx-0">
+                <div class="col-lg-6 px-0 pe-lg-4">
+                    <div id="galleryCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/mona-lisa.jpg" class="d-block" alt="Fish acrylic painting">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/the_woman.jpg" class="d-block" alt="Woman portrait artwork">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/the-sky.jpg" class="d-block" alt="People in the sky touching hands">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 gallery-content">
+                    <span class="text-uppercase text-primary fw-bold">Gallery highlight</span>
+                    <h1>The history of Art</h1>
+                    <p>Art has evolved from early cave drawings focused on survival, to religious and symbolic works in ancient and medieval times, then to realistic and human-centered art during the Renaissance, followed by creative experimentation in modern art, and finally to today's diverse and innovative contemporary art using new ideas and technology.</p>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
+    <!-- Bootstrap JS --> 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
 
-    <!-- Bootstrap JS and dependencies --> 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var galleryCarousel = document.querySelector('#galleryCarousel');
+        if (galleryCarousel) {
+            new bootstrap.Carousel(galleryCarousel, {
+                interval: 4000,
+                ride: 'carousel'
+            });
+        }
+    });
+</script>
 </body>
 </html>

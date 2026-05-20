@@ -2,6 +2,11 @@ body {
     padding-top: 70px;
 }
 
+
+html, body {
+    overflow-x: hidden;
+}
+
 header { 
     color: white; 
     padding: 20px; 
@@ -252,6 +257,87 @@ div.flex-container > div {
   div.flex-container {
     flex-direction: column;
   }
+}
+
+/* Gallery page styles */
+.gallery-section {
+    padding: 1.5rem 0 4rem;
+    background: #f8fbff;
+}
+
+.gallery-carousel {
+    width: 100%;
+}
+
+.gallery-carousel .carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+        min-height: 520px;
+        max-height: 520px;
+    }
+
+    .gallery-carousel .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #edf4ff;
+        min-height: 520px;
+    }
+
+    .gallery-carousel .carousel-item img {
+        max-width: 100%;
+        max-height: 520px;
+        width: auto;
+        height: auto;
+.gallery-content {
+    padding-left: 1.5rem;
+}
+
+.gallery-content h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: #102a43;
+}
+
+.gallery-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #334e68;
+    max-width: 560px;
+}
+
+.gallery-feature {
+    margin-top: 2.2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.gallery-feature div {
+    background: white;
+    border-radius: 16px;
+    padding: 18px 20px;
+    border: 1px solid rgba(16, 42, 67, 0.08);
+    box-shadow: 0 20px 60px rgba(16, 42, 67, 0.06);
+}
+
+.gallery-feature h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #102a43;
+}
+
+.gallery-feature p {
+    margin: 0;
+    color: #486581;
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+    .gallery-content {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
 }
 
 /* Styling the flex items */
